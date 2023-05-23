@@ -1,0 +1,4 @@
+{
+    "mongoURI": "mongodb+srv://murarirajone:cSpmdLYX5z59Jhhg@cluster0.tkjklbw.mongodb.net/?retryWrites=true&w=majority",
+    "jwtSecret":"jwttoken"
+}
