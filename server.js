@@ -13,10 +13,10 @@ connectDB();
  app.use("/api/subjects",subjectroutes);
  app.use("/api/subdetails",subjectDetailsroutes);
 
- if(process.env.NODE_ENV=="production"){
-    app.use(express.static("cheetsheef_front/build"));
-    app.get('*',(req,res)=> res.sendFile(path.resolve(__dirname,'cheetsheef_front','build','index.html')))
- }
+
+    app.use(express.static("build"));
+    app.get('*',(req,res)=> res.sendFile(path.resolve(__dirname,'build','index.html')))
+ 
 
 
 
